@@ -1,0 +1,14 @@
+{
+  "base_model": "google/electra-base-discriminator",
+  "architecture": "ElectraMCQ",
+  "num_options": 5,
+  "hidden_size": 768,
+  "classifier_hidden": 128,
+  "dropout": 0.3,
+  "max_len": 256,
+  "options": ["A", "B", "C", "D", "E"],
+  "trained_on": "Smart MCQ Solver Challenge (Kaggle)",
+  "val_map3": "1.00",
+  "kaggle_score": 0.762,
+  "notes": "Fine-tuned end-to-end, AdamW lr=2e-5, cosine schedule with warmup, 10 epochs."
+}
